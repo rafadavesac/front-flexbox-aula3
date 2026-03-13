@@ -1,0 +1,51 @@
+body {
+    margin: 0; /*sempre que usar 0, não usamos unidade de medida ex: px, % */
+}
+
+/*
+Margin -> espaço da borda pra FORA
+Padding -> espaço da borda pra DENTRO
+*/
+
+/*
+.ultra-regular {
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+header {
+    background-color:rgb(23, 2, 46) ;
+    color: white;
+    padding: 20px;
+    font-size: 26px;
+    font-family: ultra
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto; /*centralização*/
+
+    text-align: center;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: rgb(23, 2, 46);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*NETLIFY -> site que permite publicar até 100 sites de graça*/
+
+
+
+
+
