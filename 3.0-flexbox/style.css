@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; /*padrão, para sobescrever alguns comportamnetos antigos do browser*/
+}
+
 body{
     font-family: "Inter", sans-serif;
 }
@@ -17,28 +21,38 @@ body{
     justify-content: space-evenly;
 }
 
-.produtos{
+.card{
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-
-    font-weight: bold;
 }
 
-.produtos p{
-    margin-top: 5px;
-}
-
-a{
-    display: block;
+.card img{
     width: 100%;
-    height: 30px;
+}
 
-    border: none;
-    background-color: orange;
+.card .productName{
+    font-size: 14px;
     font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    color: black;
+}
+
+.card .productPrice{
+    color:#2C6B9E;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.button{
+    background-color: #DB8F51;
     border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+
+    display: block;
 }
