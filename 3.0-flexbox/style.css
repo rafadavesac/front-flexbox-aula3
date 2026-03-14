@@ -15,16 +15,17 @@ body{
     background-color: #1B6073;
     border-radius: 5px; /*em um cenário corporativo esse '5px' estaria em uma variavel*/
     padding: 20px 40px;
-
-    display: flex;
-    gap: 20px;
-    justify-content: space-evenly;
 }
 
 .card{
     background-color: white;
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card:last-child{
+    margin-bottom: 0;
 }
 
 .card img{
