@@ -6,6 +6,11 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+.wrapper{ /*delimitador de tamanho para algum elemnto*/
+    max-width: 900px; /*a partir de 900px a section não cresce mais*/
+    margin: 0 auto;
+}
+
 .title{
     font-size: 20px;
     font-weight: bold;
@@ -24,7 +29,7 @@ body{
     margin-bottom: 20px;
 }
 
-.card:last-child{
+.card:last-child{ /*para o ultimo item não ter uma margem 'extra' pq ele não tem outro produto embaixo do qual ele precisa se separar*/
     margin-bottom: 0;
 }
 
@@ -56,4 +61,16 @@ body{
     text-decoration: none;
 
     display: block;
+}
+
+@media (min-width:800px){
+    .container{
+        display: flex;
+        gap: 20px;
+    }
+
+    .card{
+        flex: 1; /*o elemento utiliza todo o espaço que sobrar/tiver no container*/
+        margin-bottom: 0;
+    }
 }
