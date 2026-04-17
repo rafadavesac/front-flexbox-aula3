@@ -16,14 +16,13 @@ const produtos = [
     },
 ]
 
-let totalPorProduto = 0
-let totalCarrinho = 0
+let totalCarrinho = 0 //acumulador
 
-for (let i = 0; i < produtos.length; i++){
-    totalPorProduto = produtos[i].preco * produtos[i].quantidade
+for (let i = 0/*contador*/; i < produtos.length; i++){
+    const totalPorProduto = produtos[i].preco * produtos[i].quantidade
     console.log(`Total do produto ${produtos[i].nome}: R$${totalPorProduto}`)
 
-    totalCarrinho += produtos[i].preco * produtos[i].quantidade
+    totalCarrinho += totalPorProduto
 }
 
-console.log(`Total carrinho: ${totalCarrinho}`)
+console.log(`\nTotal carrinho: R$${totalCarrinho}`)

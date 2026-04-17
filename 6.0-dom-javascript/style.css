@@ -1,0 +1,41 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+body.dark{ /*quando o elemento body tiver a classe dark*/
+    background-color: dimgrey;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.dark .card{
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.thumbnail{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+button{
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+}
