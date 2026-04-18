@@ -1,19 +1,16 @@
-html, body{
-    height: 100%;
+body{
+    margin: 0;
 }
 
-body{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0;
-
+.clock {
+    border: 2px solid black;
     font-size: 40px;
     font-weight: bold;
+    max-width: 200px;
+    /*margin: 40px auto 0 auto; (tbm funciona*/
+    margin-inline: auto; /*centralização horizontal*/
+    margin-top: 40px;
+    padding: 40px;
+    text-align: center;
 }
 
-div{
-    margin-top: 40px;
-    border: 1px solid black;
-    padding: 40px; 
-}
